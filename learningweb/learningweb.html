@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<a id="top"></a>
+<head>
+    <title>Module 03 - HTML</title>
+    <h1 id="title">What you need to build a website</h1>
+    <link rel="stylesheet" href="website.css">
+    <script src="html-scripts.js"></script>
+</head>
+<style>
+    #linkSecP {
+        text-align: center, justify; 
+        
+    }
+</style>
+
+
+<body>
+<!--Button to top of page-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+
+<!--Navigation bar, needs better design-->
+    <div class="navigation">
+        <button onclick="toHome()">About Me</button>
+        <button onclick="toHTML()">Website Building</button>
+        <button onclick="toOTW()">OverTheWire</button>
+        <button onclick="toPico()">Capture The Flag</button>
+    </div>
+<!--Introduction Section-->
+    <div id="intro">
+        <h2 id="intro1">Learning about HTML and CSS</h2>
+    </div>
+<!--HTML Section-->
+    <!--Table-->
+    <div class="tableSec">
+        <h2><u>Creating Table</u></h2>
+            <table>
+                <tr>
+                    <th>Test 1</th>
+                    <th>Test 2</th>
+                </tr>
+                <tr>
+                    <td>Data1</td>
+                    <td>Data2</td>
+                </tr>
+            </table>
+    </div>
+    <hr>
+
+    <!--Links Section-->
+    <div id="linkSec">
+        <h2><u>Learning about links</u></h2>
+            <p id="linkSecP">
+                By default, the linked page will be displayed in the current browser window. 
+                To change this, you must specify another target for the link.
+
+                <br>The target attribute specifies where to open the linked document.
+        
+                The target attribute can have one of the following values:
+        
+             <pre>
+                _self - Default. Opens the document in the same window/tab as it was clicked
+                _blank - Opens the document in a new window or tab
+                _parent - Opens the document in the parent frame
+                _top - Opens the document in the full body of the window
+             </pre>  
+            </p>
+            <p>2 different types of URL</p>
+            <p>Absolute URL refers to full website address in href. 
+                <br> 
+                Relative URL refers to URL in href without the https://www portion.
+            </p>
+    </div>
+    <hr>
+
+    <!--Forms Section-->
+    <div id="formSec">
+        <h2><u>Learning about HTML Forms</u></h2>
+            
+    </div>
+    <hr>
+
+    <!--Inline CSS Section-->
+    <div id="colorSec">
+        <h2><u>Learning about Inline CSS</u></h2>
+            <p>Inline CSS is used to add unique style to a single element</p>
+            <p style="color:blueviolet;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p style="font-family:arial;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p style="font-weight:bold;">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            <p style="background-color: blanchedalmond;">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>    
+                
+        
+    </div>
+    <hr>
+
+    <!--List Section-->
+    <div id="colorSec">
+        <h2><u>Learning about Lists</u></h2>
+            <h3>Ordered Lists</h3>
+                <ol>
+                    <li>This</li>
+                    <li>is an</li>
+                    <li>example</li>
+                    <li>of an</li>
+                    <li>ordered list</li>
+                </ol>    
+            <h3>Unordered Lists</h3>
+                <ul>
+                    <li>This</li>
+                    <li>is an</li>
+                    <li>example</li>
+                    <li>of an</li>
+                    <li>unordered list</li>
+                </ul>
+        
+    </div>
+    <hr>
+
+    <!--Images Section-->
+    <div id="imageSec">
+        <h2><u>Learning about images</u></h2>
+            <p>Local source</p>
+                <img src="images.jpg" alt="image from Local">
+            <p>Internet source</p>
+                <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/03/maxresdefault-39.jpg?resize=696%2C392&ssl=1" alt="image from Internet">
+    </div>
+    <hr>
+
+    <!--Videos Section-->
+    <div id="videoSec">
+        <h2><u>Learning about videos</u></h2>
+            <p>Video using direct URL(not working?) </p>
+                <video controls src="https://www.youtube.com/watch?v=JCTmGYCnD3o">test </video><br>
+
+            <p>Video using local file</p>
+                <video width="320" height="240" controls>
+                <source src="videoplayback.mp4" type="video/mp4">
+                </video><br>
+
+            <p>Video using iframe / embed link</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JCTmGYCnD3o" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <hr>
+
+    <!--Exploring tags Section-->
+    <div id="tagSec">
+        <h2><u>Exploring Pre tag</u></h2>
+            <!-- pre tag maintains the format in which you type the text -->
+            <p>The Pre tag defines preformatted text.</p>
+            <p>Any text within the tag is preserved and displayed in whichever format it was typed in.</p>
+            <pre style="color:green; font-size:150%;">
+                Test 1        Test 4
+                Test 2
+                Test 3
+            </pre>
+        <hr>
+        <h2><u>Exploring Blockquote tag</u></h2>
+            <!-- blockquote specifies a section that is quoted from another source, <q> can be used for inline (short) quotations -->
+            <p>Here is a quote from Cyber Security Agency of Singapore (CSA)</p>
+            <blockquote cite="https://www.csa.gov.sg/Who-We-Are/Our-Organisation">
+                The <q>Cyber Security Agency of Singapore (CSA)</q> was formed in 2015 and has been given the task of 
+                protecting Singapore?s cyberspace. It is part of the Prime Minister?s Office and is managed by the Ministry of 
+                Communications and Information. 
+            </blockquote>
+        <hr>
+        <h2><u>Exploring Address tag</u></h2>
+            <!-- Address tag -->
+            <address>
+                Written by John Doe.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+            </address>
+      
+    </div>
+
+    <div id="footer">
+        <h6>Copyright 2022, Practice website, Kiat Meng </h6>
+    </div>
+
+</body>
+
+
+</html>
