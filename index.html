@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Home</title>
+	 <!--Styling/Js-->
+    <link rel="stylesheet" href="notHTML/css/home1.css">
+    <script src="notHTML/js/scripts.js"></script>
+	<!--Favicon Icon from https://favicon.io/-->
+	 <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!--Mobile Friendly-->
+	<meta name="viewport" content="width=device-width", initial-scale=1>
+</head>
+
+<body>
+    <style>
+       body, html {
+    		height: 100%;
+		}
+
+		/* The hero image - W3School */
+		.homeIntro {
+  		/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  			background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("notHTML/image/2.jpeg");
+
+	  		/* Set a specific height */
+	  		height: 50%;
+	
+	 		 /* Position and center the image to scale nicely on all screens */
+	  		background-position: center;
+	  		background-repeat: no-repeat;
+	  		background-size: cover;
+	  		position: relative;
+		}
+
+/* Place text in the middle of the image */
+		.homeIntro1 {
+		  text-align: center;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  color: white;
+		} 
+    </style>
+	 
+    <h1 id="title">Welcome</h1>
+<!--Navigation bar, needs better design-->
+	<div id="navigation">
+		<a href="contact.html">Contact Me</a>
+		<a href="pico.html">Capture The Flag</a>
+		<a href="web.html">Website Building</a>
+		<a href="learn.html">Linux CLI</a>
+		<a href="index.html">Home</a>
+	</div>
+	<br>
+<!--About Me Section-->
+    <div class="homeIntro">
+        <div class="homeIntro1">
+            <h1>Hi there I am Elias.</h1>
+            <p>I am a currently studying an Advance Diploma in Cyber Security and have dreams of becoming an ethical hacker.</p>
+            <p>This will be a place for me to document all that I've learnt since this journey started.</p>
+        </div>
+    </div>
+	
+<!--What I am learning Section-->
+    <!--Programming Language Section-->
+    <div id="learnings">
+        <h2>What am I learning now.</h2>
+        <p>Check out what I've learnt from HTML and CSS here <a href="web.html">Website Building</a> or from the navigation bar.</p>
+        <p>Check out what I've learnt about Linux Command Line here <a href="learn.html">Linux CLI</a> or from the navigation bar.</p>
+		<hr>
+    </div>
+
+<!--What I am planning to learn-->
+<div id="next">
+    <h2>What's next for me.</h2>
+          <ul>
+        <li>Learn more about Python, one small project at a time.</li>
+        <li>Complete my Advanced Diploma in Cyber Security.</li>
+        <li>Attain EC-Council certifications:
+              <pre>- CASE .NET</pre>
+              <pre>- Certified Network Defender</pre>
+              <pre>- Certified Ethical Hacker</pre>
+        </li>
+        <li>Challenging the other levels in the Bandit Wargames.</li>
+        <li>Checking out other Wargames from the OverTheWire Community.</li>
+        <li>Revive an old Telegram Bot project.</li>
+      </ul>
+  
+  </div> 
+
+    <div id="bottomofpage">
+        <div id="footer">
+            <h6>Copyright 2022, Practice website, i-am-a-potato</h6>
+        </div>
+      
+    </div>	
+</body>
+
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <title>Contact Page</title>
+     <!--Styling/Js-->
+     <link rel="stylesheet" href="notHTML/css/home1.css">
+     <script src="notHTML/js/scripts.js"></script>
+     <!--Favicon Icon from https://favicon.io/-->
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+     <!--Mobile Friendly-->
+     <meta name="viewport" content="width=device-width", initial-scale=1>
+</head>
+
+<body>
+	<style>
+	form{
+		display: table;
+	}
+	.pform{
+		display: table-row;	
+	}
+	.lform{
+		display: table-cell;
+	}
+	.iform{
+		display: table-cell;
+	}
+	
+</style>
+    <h1 id="title">Contact Me</h1>
+<!--Navigation bar, needs better design-->
+	<div id="navigation">
+		<a href="contact.html">Contact Me</a>
+		<a href="pico.html">Capture The Flag</a>
+		<a href="web.html">Website Building</a>
+		<a href="learn.html">Linux CLI</a>
+		<a href="index.html">Home</a>
+	</div>
+<br>
+<!--Form to googlesheet-->
+	<div id="contactform">
+		<h2>Hi if you wish to reach out to me, fill up this form with your details:</h2>
+		
+		<form action="https://script.google.com/macros/s/AKfycbz9tNUO6LSAkiRrFQ-mp5UkwEGvTtqwR0bsHSvEftQy3GObmZ-FZSSt0zA5ibPZaJfBUQ/exec" method="POST">
+			 	<p class="pform">
+					<label class="lform" for="fname">First name:</label>
+	  				<input class="iform" type="text" id="fname" name="fname"><br><br>
+				</p>
+	  			<p class="pform">
+					<label class="lform" for="lname">Last name:</label>
+	  				<input class="iform" type="text" id="lname" name="lname"><br><br>
+				</p>
+	  			<p class="pform">
+					<label class="lform" for="email">Email Address: </label>
+	  				<input class="iform" type="email" id="email" name="email"><br><br>
+				</p>
+				<p class="pform">
+					<label class="lform" for="contact">Contact Number: </label>
+	  				<input class="iform" type="number" id="email" name="email"><br><br>
+				</p>
+				
+	  			<input type="submit" value="Submit">
+				
+			</form>
+	
+	</div>
+    
+<div id="bottomofpage">
+    <div id="footer">
+        <h6>Copyright 2022, Practice website, i-am-a-potato</h6>
+    </div>
+  
+</div>	
+</body>
+
+
+</html>
